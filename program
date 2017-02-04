@@ -1,0 +1,7 @@
+#!/bin/bash
+grep  BUG file > /dev/null && exit 1 # negate - hence -v so we return one status line...
+exit 0 # all good.
+
+
+
+# Note: If you want to skip - return 125. see man git-bisect for more info
